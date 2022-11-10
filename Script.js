@@ -8,14 +8,9 @@ let johanheight = 1.95;
 let markBmiTotall = markMss / markheight ** 2;
 let johanBmiTotall = johanMss / johanheight ** 2;
 
-let markHigherBMI = true;
+let markHigherBMI = markBmiTotall > johanBmiTotall;
 
-console.log(markBmiTotall);
-console.log(johanBmiTotall);
-
-if (markBmiTotall > johanBmiTotall) {
-  console.log(markHigherBMI);
-}
+console.log(markBmiTotall, johanBmiTotall, markHigherBMI);
 
 // Data 2
 
@@ -27,14 +22,9 @@ let johanheightData2 = 1.76;
 let markBmiTotallData2 = markMssData2 / markheightData2 ** 2;
 let johanBmiTotallData2 = johanMssData2 / johanheightData2 ** 2;
 
-let markHigherBMIData2 = true;
+let markHigherBMIData2 = johanBmiTotallData2 > markBmiTotallData2;
 
-console.log(markBmiTotallData2);
-console.log(johanBmiTotallData2);
-
-if (johanBmiTotallData2 > markBmiTotallData2) {
-  console.log(markHigherBMIData2);
-}
+console.log(markBmiTotallData2, johanBmiTotallData2, markHigherBMIData2);
 
 // Answer: markBmiTotall is Greater
 
